@@ -1,0 +1,115 @@
+{
+  "permissions": {
+    "defaultMode": "dontAsk"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/init.sh",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "UCES_EVENT=SessionStart bash ~/.claude/hooks/memory.sh",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "UCES_EVENT=Stop bash ~/.claude/hooks/memory.sh",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/prompt-guard.sh",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/validate.sh",
+            "timeout": 2
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(npm install*)|Bash(npm i *)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c '[ -f app.json ] && echo \"[UCES] Expo detected: Use npx expo install instead\" >&2 || true'",
+            "timeout": 1
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(rm -rf*)",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Destructive operation detected. Please confirm the target path."
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git push*-f*)|Bash(git push*--force*)",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Force push detected. This will rewrite remote history. Continue?"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash(git commit*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/commit-check.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/hooks/format.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/hooks/statusline.sh"
+  },
+  "promptSuggestionEnabled": false
+}
